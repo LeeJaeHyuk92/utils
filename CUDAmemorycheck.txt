@@ -1,0 +1,8 @@
+//cuda memory check
+size_t avail;
+size_t total;
+cudaMemGetInfo(&avail, &total);
+printf("\n\nDevice memory avail: %u\n", avail);
+printf("Device memory total: %u\n", total);
+float per = avail / (float)total;
+printf("Device memory avail: %f\n\n", per);
