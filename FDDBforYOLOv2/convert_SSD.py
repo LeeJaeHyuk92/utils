@@ -1,3 +1,6 @@
+# label x_min y_min w h (divided image size)
+
+
 import os
 import cv2
 import math

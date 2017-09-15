@@ -1,3 +1,5 @@
+# label cx cy w h (divided image size)
+
 import os
 import cv2
 
