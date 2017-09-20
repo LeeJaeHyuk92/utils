@@ -16,6 +16,7 @@ img = cv2.imread(os.path.join(path_img, name_img), cv2.IMREAD_GRAYSCALE)
 
 for thresh in range(thresh_min, thresh_max + 1, 1):
     _, img_bin = cv2.threshold(img, thresh, 255, cv2.THRESH_BINARY)
+
     img_value = img == thresh
     img_value = img_value.astype(np.uint8)
     np.place(img_value, img_value > 0, 255)
