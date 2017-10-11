@@ -5,12 +5,12 @@ import numpy as np
 
 # parameter to be modified
 debug = False
-thresh_min = 120
-thresh_max = 121
+thresh_min = 0
+thresh_max = 10
 
 
 path_img = 'images'
-name_img = 'example.png'
+name_img = 'IRdata.bmp'
 img = cv2.imread(os.path.join(path_img, name_img), cv2.IMREAD_GRAYSCALE)
 
 
